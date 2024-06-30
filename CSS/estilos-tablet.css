@@ -1,0 +1,195 @@
+:root.dark {
+  --shadow: rgb(12, 12, 12);
+}
+
+:root {
+  --shadow: rgb(238, 238, 238);
+}
+@media (max-width: 768px) {
+  header.cabecera {
+    z-index: 4;
+  }
+  .cabecera nav ul {
+    position: absolute;
+    top: 90px;
+    background-color: rgba(220, 206, 206, 0.042);
+    backdrop-filter: blur(0.2rem);
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all ease 0.5s;
+    z-index: -1;
+    height: 0px;
+    box-shadow: 2px 2px 10px var(--shadow);
+  }
+  .cabecera nav ul li {
+    transition: all ease 1s;
+    margin-block: 10px;
+    display: none;
+  }
+  .cabecera nav ul li:hover {
+    backdrop-filter: blur(0.4rem);
+  }
+  .frontis {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    z-index: -2;
+  }
+  .frontis .imagen-presentacion {
+    margin-left: 30px;
+    position: relative;
+    top: 40px;
+  }
+  .frontis .imagen-presentacion .img-frontis {
+    filter: brightness(var(--brillo-imagen));
+    width: 35rem;
+  }
+  .imagen-presentacion .img-computadora {
+    display: var(--brillo-visible);
+    position: absolute;
+    filter: brightness(30%);
+    top: 55.8%;
+    right: 32.2%;
+    width: 13.3rem;
+  }
+  .portafolio .contenedor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .portafolio .contenedor .proyecto {
+    width: 400px;
+  }
+
+  .btn {
+    height: 40px;
+    width: 50px;
+    transform: translateX(-70px);
+  }
+  .btn p {
+    display: none;
+  }
+  .btn-burger {
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+    cursor: pointer;
+  }
+  #check:checked ~ #cabecera ul {
+    z-index: 0;
+    height: 250px;
+  }
+  #check:checked ~ #cabecera nav ul li {
+    display: block;
+  }
+  .frontis #brillo-pantalla {
+    width: 180px;
+    height: 60px;
+    top: 45%;
+  }
+  .contacto .redes .icon {
+    font-size: 3rem;
+    margin: 10px 20px;
+    color: var(--icon);
+  }
+  .frontis img.imgfloat {
+    z-index: -1;
+    position: absolute;
+    height: 20px;
+    right: 40%;
+    top: 20%;
+    transition: all 1s ease-out;
+  }
+  .frontis img.engr1 {
+    height: 40px;
+  }
+
+  .frontis img.nube {
+    height: 50px;
+  }
+
+  .frontis img.javascript {
+    height: 18px;
+  }
+  .frontis img.engr2 {
+    height: 30px;
+  }
+  .frontis img.sql {
+    height: 25px;
+  }
+  .frontis img.java {
+    height: 20px;
+  }
+  .nombre {
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #borde_animado1 {
+    width: 90%;
+    background-color: #d8d8d83f;
+    height: 30%;
+    position: absolute;
+    transform: translateY(-75%);
+    border-radius: 20px;
+    transition: opacity 1s;
+  }
+
+  #borde_animado2 {
+    transition: all ease 0.2;
+    width: 90%;
+    background-color: #d8d8d83f;
+    height: 40%;
+    position: absolute;
+    transform: translateY(50%);
+    border-radius: 20px;
+  }
+  .portafolio .contenedor .proyectos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .portafolio .contenedor .proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .portafolio .contenedor a {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .tecnologias img {
+    height: 40px;
+    width: auto;
+    margin: 60px;
+  }
+  .tecnologias img:nth-child(0) {
+    margin-top: 20px;
+    height: 60px;
+  }
+  .hora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 80%;
+  }
+}

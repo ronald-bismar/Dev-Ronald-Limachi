@@ -1,0 +1,53 @@
+@media (max-width: 576px) {
+  .frontis .imagen-presentacion .img-frontis {
+    filter: brightness(var(--brillo-imagen));
+    width: 30rem;
+  }
+  .imagen-presentacion .img-computadora {
+    display: var(--brillo-visible);
+    position: absolute;
+    filter: brightness(30%);
+    width: 11.3rem;
+  }
+  .frontis #brillo-pantalla {
+    width: 150px;
+    top: 42%;
+  }
+  .portafolio .contenedor .proyecto {
+    width: 300px;
+  }
+
+  .contacto .redes .icon {
+    font-size: 3rem;
+    margin: 10px 20px;
+    color: var(--icon);
+  }
+  .frontis img.imgfloat {
+    z-index: -1;
+    position: absolute;
+    height: 18px;
+    right: 40%;
+    top: 20%;
+    transition: all 1s ease-out;
+  }
+  .frontis img.engr1 {
+    height: 32px;
+  }
+
+  .frontis img.nube {
+    height: 40px;
+  }
+
+  .frontis img.javascript {
+    height: 16px;
+  }
+  .frontis img.engr2 {
+    height: 28px;
+  }
+  .frontis img.sql {
+    height: 23px;
+  }
+  .frontis img.java {
+    height: 18px;
+  }
+}
